@@ -2,13 +2,13 @@ import React from 'react';
 import { Router, Route } from 'dva/router';
 import IndexPage from './routes/IndexPage';
 
-import ProductList from './routes/ProductList.js';
+import Users from './routes/Users.js';
 
 function RouterConfig({ history }) {
   return (
     <Router history={history}>
       <Route path="/" component={IndexPage} />
-      <Route path="/product-list" component={ProductList} />
+      <Route path="/users" component={Users} />
     </Router>
   );
 }
