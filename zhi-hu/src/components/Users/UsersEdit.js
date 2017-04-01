@@ -49,10 +49,10 @@ class UsersEdit extends Component {
         <Modal
           title="Edit User"
           visible={this.state.visible}
-          onOk={this.okHandler}
+          onOk={this.okHandler.bind(this)}
           onCancel={this.hideModel.bind(this)}
         >
-          <Form horizontal onSubmit={this.okHandler}>
+          <Form horizontal onSubmit={this.okHandler.bind(this)}>
             <Form.Item
               {...formItemLayout}
               label="Name"
